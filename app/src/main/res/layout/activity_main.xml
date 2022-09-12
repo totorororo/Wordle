@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Guess1"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:text="Guess1"
+        android:textAlignment="viewEnd"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Output1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewGuess1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Guess2"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:text="Guess2"
+        android:textAlignment="viewEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Output2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewGuess2"
+        app:layout_constraintTop_toBottomOf="@+id/Output1" />
+
+    <TextView
+        android:id="@+id/Output2"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:text="Output2"
+        android:textAlignment="viewEnd"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Guess3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewGuessCheck2"
+        app:layout_constraintTop_toBottomOf="@+id/Guess2" />
+
+    <TextView
+        android:id="@+id/Guess3"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:text="Guess3"
+        android:textAlignment="viewEnd"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Output3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewGuess3"
+        app:layout_constraintTop_toBottomOf="@+id/Output2" />
+
+    <TextView
+        android:id="@+id/Output3"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:text="Output3"
+        android:textAlignment="viewEnd"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewGuessCheck3"
+        app:layout_constraintTop_toBottomOf="@+id/Guess3" />
+
+    <TextView
+        android:id="@+id/textViewTheWord"
+        android:layout_width="151dp"
+        android:layout_height="47dp"
+        android:text="Wordle"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGuessCheck3"
+        app:layout_constraintVertical_bias="0.69" />
+
+    <TextView
+        android:id="@+id/textViewGuessCheck3"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:text="Guess #3 Check"
+        android:textAlignment="viewStart"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/Output3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGuess3" />
+
+    <TextView
+        android:id="@+id/textViewGuess3"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:text="Guess #3"
+        android:textAlignment="viewStart"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGuessCheck3"
+        app:layout_constraintEnd_toStartOf="@+id/Guess3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGuessCheck2" />
+
+    <TextView
+        android:id="@+id/textViewGuessCheck2"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:text="Guess #2 Check"
+        android:textAlignment="viewStart"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGuess3"
+        app:layout_constraintEnd_toStartOf="@+id/Output2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGuess2" />
+
+    <TextView
+        android:id="@+id/textViewGuess2"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:text="Guess #2"
+        android:textAlignment="viewStart"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGuessCheck2"
+        app:layout_constraintEnd_toStartOf="@+id/Guess2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGuessCheck1" />
+
+    <TextView
+        android:id="@+id/textViewGuessCheck1"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:text="Guess #1 Check"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGuess2"
+        app:layout_constraintEnd_toStartOf="@+id/Output1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGuess1" />
+
+    <TextView
+        android:id="@+id/textViewGuess1"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:text="Guess #1"
+        android:textAlignment="viewStart"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGuessCheck1"
+        app:layout_constraintEnd_toStartOf="@+id/Guess1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="GUESS!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.974"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/textInputEditText"
+        android:layout_width="277dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="24dp"
+        android:hint="Enter 4 letter guess here"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Output1"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:text="Output1"
+        android:textAlignment="viewEnd"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Guess2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewGuessCheck1"
+        app:layout_constraintTop_toBottomOf="@+id/Guess1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
